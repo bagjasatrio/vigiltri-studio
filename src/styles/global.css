@@ -1,0 +1,68 @@
+@import "tailwindcss";
+
+@layer base {
+  :root {
+    --bg-obsidian: #08090C;
+    --bg-card: #12151E;
+    --border-silver: rgba(226, 232, 240, 0.08);
+    --accent-indigo: #6366F1;
+    --accent-silver: #E2E8F0;
+    --text-primary: #F8FAFC;
+    --text-muted: #94A3B8;
+  }
+
+  body {
+    background-color: var(--bg-obsidian);
+    color: var(--text-primary);
+    font-family: 'Montserrat', sans-serif;
+    overflow-x: hidden;
+    cursor: default;
+    selection-background-color: rgba(99, 102, 241, 0.3);
+  }
+
+  h1, h2, h3, h4, .font-heading {
+    font-family: 'Fredoka', sans-serif;
+  }
+}
+
+/* Sharp, Minimalist Custom Scrollbar */
+::-webkit-scrollbar {
+  width: 6px;
+}
+::-webkit-scrollbar-track {
+  background: #08090C;
+}
+::-webkit-scrollbar-thumb {
+  background: #1E2330;
+  border-radius: 0px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #4A5568;
+}
+
+/* Subdued Noise Grain Overlay */
+.bg-noise {
+  background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 200 200' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noiseFilter'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.8' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noiseFilter)' opacity='0.03'/%3E%3C/svg%3E");
+}
+
+/* Linear Metallic Border Glow Effect */
+.metallic-border {
+  position: relative;
+  background: linear-gradient(#12151E, #12151E) padding-box,
+              linear-gradient(135deg, rgba(226, 232, 240, 0.2), rgba(99, 102, 241, 0.1), rgba(226, 232, 240, 0.03)) border-box;
+  border: 1px solid transparent;
+}
+
+.metallic-border:hover {
+  background: linear-gradient(#12151E, #12151E) padding-box,
+              linear-gradient(135deg, rgba(226, 232, 240, 0.4), rgba(99, 102, 241, 0.4), rgba(226, 232, 240, 0.15)) border-box;
+}
+
+/* Sharp Glass Backdrop */
+.sharp-glass {
+  background: rgba(18, 21, 30, 0.75);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border: 1px solid rgba(226, 232, 240, 0.08);
+}
+
