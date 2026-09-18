@@ -56,6 +56,8 @@ declare module 'lucide-react' {
   export const ScrollText: LucideIcon;
   export const MonitorPlay: LucideIcon;
   export const Moon: LucideIcon;
+  export const Menu: LucideIcon;
+  export const X: LucideIcon;
 
   export const icons: { [key: string]: LucideIcon };
   export default icons;
