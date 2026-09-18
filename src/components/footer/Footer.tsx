@@ -50,58 +50,58 @@ export const Footer: React.FC = () => {
           
           {/* Deep Night & Lunar Surface Ambient Atmosphere */}
           {/* 1. Deep Space Nebula Radial Glow */}
-          <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[700px] h-[350px] bg-indigo-900/15 blur-[140px] rounded-full pointer-events-none" />
+          <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[800px] h-[400px] bg-indigo-600/20 blur-[160px] rounded-full pointer-events-none" />
 
-          {/* 2. Giant Lunar Crater Horizon & Crescent Atmosphere (Right Wing) */}
+          {/* 2. Giant Lunar Crater Horizon & Crescent Atmosphere (Right Wing Background) */}
           <svg
-            className="absolute -right-20 -bottom-24 w-[480px] h-[480px] pointer-events-none opacity-25 text-indigo-300"
+            className="absolute -right-12 -bottom-16 w-[520px] h-[520px] pointer-events-none opacity-55 text-indigo-300/80 z-0"
             viewBox="0 0 500 500"
             fill="none"
           >
             {/* Giant Moon Rim */}
-            <circle cx="250" cy="250" r="220" stroke="currentColor" strokeWidth="1" strokeDasharray="3 4" opacity="0.6" />
-            <circle cx="250" cy="250" r="190" stroke="currentColor" strokeWidth="0.5" opacity="0.3" />
+            <circle cx="250" cy="250" r="220" stroke="currentColor" strokeWidth="1.2" strokeDasharray="4 4" opacity="0.8" />
+            <circle cx="250" cy="250" r="190" stroke="currentColor" strokeWidth="0.8" opacity="0.5" />
             
             {/* Craters with subtle depth */}
-            <circle cx="200" cy="180" r="32" stroke="currentColor" strokeWidth="0.8" strokeDasharray="2 3" opacity="0.5" />
-            <circle cx="200" cy="180" r="20" stroke="currentColor" strokeWidth="0.5" opacity="0.3" />
-            <circle cx="290" cy="240" r="45" stroke="currentColor" strokeWidth="0.8" strokeDasharray="4 4" opacity="0.5" />
-            <circle cx="290" cy="240" r="30" stroke="currentColor" strokeWidth="0.5" opacity="0.3" />
-            <circle cx="170" cy="290" r="24" stroke="currentColor" strokeWidth="0.6" strokeDasharray="2 2" opacity="0.4" />
-            <circle cx="340" cy="160" r="18" stroke="currentColor" strokeWidth="0.6" opacity="0.3" />
-            <circle cx="240" cy="340" r="28" stroke="currentColor" strokeWidth="0.6" strokeDasharray="3 3" opacity="0.4" />
+            <circle cx="200" cy="180" r="32" stroke="currentColor" strokeWidth="1" strokeDasharray="3 3" opacity="0.75" />
+            <circle cx="200" cy="180" r="20" stroke="currentColor" strokeWidth="0.7" opacity="0.5" />
+            <circle cx="290" cy="240" r="45" stroke="currentColor" strokeWidth="1" strokeDasharray="4 4" opacity="0.75" />
+            <circle cx="290" cy="240" r="30" stroke="currentColor" strokeWidth="0.7" opacity="0.5" />
+            <circle cx="170" cy="290" r="24" stroke="currentColor" strokeWidth="0.8" strokeDasharray="2 2" opacity="0.6" />
+            <circle cx="340" cy="160" r="18" stroke="currentColor" strokeWidth="0.8" opacity="0.5" />
+            <circle cx="240" cy="340" r="28" stroke="currentColor" strokeWidth="0.8" strokeDasharray="3 3" opacity="0.6" />
 
             {/* Orbiting Dust Arc */}
-            <ellipse cx="250" cy="250" rx="240" ry="120" stroke="currentColor" strokeWidth="0.8" strokeDasharray="6 6" transform="rotate(-30 250 250)" opacity="0.4" />
+            <ellipse cx="250" cy="250" rx="240" ry="120" stroke="currentColor" strokeWidth="1" strokeDasharray="6 6" transform="rotate(-30 250 250)" opacity="0.6" />
           </svg>
 
-          {/* 3. Star Constellation & Deep Night Sky Texture (Left Wing) */}
+          {/* 3. Star Constellation & Deep Night Sky Texture (Left Wing Background) */}
           <svg
-            className="absolute -left-10 top-0 w-[420px] h-[340px] pointer-events-none opacity-20 text-slate-300"
+            className="absolute -left-8 top-2 w-[460px] h-[360px] pointer-events-none opacity-50 text-indigo-200/80 z-0"
             viewBox="0 0 400 300"
             fill="none"
           >
             {/* Constellation Lines */}
-            <polyline points="50,40 120,70 180,40 240,110 320,80" stroke="currentColor" strokeWidth="0.7" strokeDasharray="2 4" />
-            <polyline points="120,70 140,160 210,190 280,150" stroke="currentColor" strokeWidth="0.7" strokeDasharray="2 4" />
-            <polyline points="60,180 140,160" stroke="currentColor" strokeWidth="0.7" strokeDasharray="2 4" />
+            <polyline points="50,40 120,70 180,40 240,110 320,80" stroke="currentColor" strokeWidth="1" strokeDasharray="3 4" opacity="0.8" />
+            <polyline points="120,70 140,160 210,190 280,150" stroke="currentColor" strokeWidth="1" strokeDasharray="3 4" opacity="0.8" />
+            <polyline points="60,180 140,160" stroke="currentColor" strokeWidth="1" strokeDasharray="3 4" opacity="0.8" />
             
             {/* Star Nodes */}
-            <circle cx="50" cy="40" r="2" fill="currentColor" />
-            <circle cx="120" cy="70" r="2.5" fill="#818CF8" />
-            <circle cx="180" cy="40" r="2" fill="currentColor" />
-            <circle cx="240" cy="110" r="3" fill="#A5B4FC" />
-            <circle cx="320" cy="80" r="2" fill="currentColor" />
-            <circle cx="140" cy="160" r="2.5" fill="currentColor" />
-            <circle cx="210" cy="190" r="2" fill="#818CF8" />
-            <circle cx="280" cy="150" r="2" fill="currentColor" />
-            <circle cx="60" cy="180" r="2" fill="currentColor" />
+            <circle cx="50" cy="40" r="2.5" fill="currentColor" />
+            <circle cx="120" cy="70" r="3" fill="#818CF8" />
+            <circle cx="180" cy="40" r="2.5" fill="currentColor" />
+            <circle cx="240" cy="110" r="3.5" fill="#A5B4FC" />
+            <circle cx="320" cy="80" r="2.5" fill="currentColor" />
+            <circle cx="140" cy="160" r="3" fill="currentColor" />
+            <circle cx="210" cy="190" r="2.5" fill="#818CF8" />
+            <circle cx="280" cy="150" r="2.5" fill="currentColor" />
+            <circle cx="60" cy="180" r="2.5" fill="currentColor" />
 
             {/* Star Dust */}
-            <circle cx="90" cy="110" r="1" fill="currentColor" opacity="0.6" />
-            <circle cx="220" cy="60" r="1" fill="currentColor" opacity="0.6" />
-            <circle cx="290" cy="210" r="1" fill="currentColor" opacity="0.6" />
-            <circle cx="30" cy="240" r="1" fill="currentColor" opacity="0.6" />
+            <circle cx="90" cy="110" r="1.5" fill="currentColor" opacity="0.8" />
+            <circle cx="220" cy="60" r="1.5" fill="currentColor" opacity="0.8" />
+            <circle cx="290" cy="210" r="1.5" fill="currentColor" opacity="0.8" />
+            <circle cx="30" cy="240" r="1.5" fill="currentColor" opacity="0.8" />
           </svg>
 
           {/* Top Bar: Nav Links | Centered Glowing Studio Branding | Social Icons */}
