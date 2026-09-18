@@ -104,7 +104,7 @@ export const HeroSection: React.FC = () => {
 
             {/* Secondary 3D Glass Bevel Button: Layanan IT Tech */}
             <motion.a
-              href="#services"
+              href="#services-expedition"
               data-cursor="hover"
               whileHover={{ y: -4, scale: 1.03 }}
               whileTap={{ y: 2, scale: 0.97 }}
