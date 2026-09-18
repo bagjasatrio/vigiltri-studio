@@ -75,7 +75,7 @@ export const CustomCursor: React.FC = () => {
   };
 
   return (
-    <>
+    <div className="hidden lg:block">
       {/* Transparent Crescent / Glowing Moon Cursor */}
       <motion.div
         className="fixed top-0 left-0 pointer-events-none z-50 flex items-center justify-center select-none"
@@ -130,6 +130,6 @@ export const CustomCursor: React.FC = () => {
           top: `${mousePosition.y}px`,
         }}
       />
-    </>
+    </div>
   );
 };
